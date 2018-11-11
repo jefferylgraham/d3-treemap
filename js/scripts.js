@@ -87,7 +87,7 @@ Promise.all(dataFiles.map(url => d3.json(url))).then(function(values) {
       tooltip.style("opacity", 0.9).style("visibility", "visible");
       tooltip
         .html(
-          "<div>" +
+          "<div class='tooltip'>" +
             d.data.name +
             "<br>" +
             "$" +
