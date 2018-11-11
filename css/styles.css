@@ -15,6 +15,10 @@ body {
   color: white;
 }
 
+#legend {
+  background-color:rgb(128,128,128, 0.6);
+}
+
 svg {
   font: 10px sans-serif;
   text-align: center;
