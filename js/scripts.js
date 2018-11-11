@@ -113,6 +113,7 @@ Promise.all(dataFiles.map(url => d3.json(url))).then(function(values) {
   ];
   var legend = d3
     .select("#legend")
+    .attr("height", 210)
     .append("g")
     .attr("transform", "translate(0,30)");
 
