@@ -86,7 +86,14 @@ Promise.all(dataFiles.map(url => d3.json(url))).then(function(values) {
     .on("mouseover", function(d) {
       tooltip.style("opacity", 0.9).style("visibility", "visible");
       tooltip
-        .html(d.data.value)
+        .html(
+          "<div>" +
+            d.data.name +
+            "<br>" +
+            "$" +
+            parseInt(d.data.value).toLocaleString() +
+            "</div>"
+        )
         .attr("data-value", d.data.value)
         .style("left", d3.event.pageX + "px")
         .style("top", d3.event.pageY + "px");
